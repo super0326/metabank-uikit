@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
-    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "build": "rimraf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
@@ -27,14 +27,21 @@
     ]
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.1.1",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.5",
     "@types/react-dom": "^17.0.5",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-transition-group": "^4.4.2",
+    "@types/styled-components": "^5.1.12",
     "jest-styled-components": "^7.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.0"
+    "rollup": "^2.38.4",
+    "styled-components": "^5.2.0",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.3"
   },
   "peerDependencies": {
     "react": "^17.0.2",
@@ -44,6 +51,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
+    "@rollup/plugin-url": "^6.1.0",
     "@types/lodash": "^4.14.168",
     "@types/styled-system": "^5.1.10",
     "lodash": "^4.17.20",
@@ -53,6 +61,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "b27781d442008691c9c92d1419716f71a8b2c8d4"
+  }
 }
