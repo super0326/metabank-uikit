@@ -224,7 +224,7 @@ var styleVariants$2 = (_b$3 = {},
     },
     _b$3[variants$6.TEXT] = {
         backgroundColor: "transparent",
-        color: "primary",
+        color: "success",
         boxShadow: "none",
     },
     _b$3);
@@ -610,7 +610,7 @@ var Icon$1d = function (props) {
 
 var Icon$1c = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 75 47" }, props),
-        React__default['default'].createElement("image", { width: "75", height: "47", href: '/logo.png' })));
+        React__default['default'].createElement("image", { width: "75", height: "47", href: '/darklogo.png' })));
 };
 
 var Icon$1b = function (props) {
@@ -767,7 +767,7 @@ var Icon$$ = function (props) {
     theme.isDark ? "#3C3742" : "#e9eaeb";
     theme.isDark ? "#666171" : "#bdc2c4";
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 200 200" }, props),
-        React__default['default'].createElement("image", { width: "200", height: "200", href: '/logo.png' })));
+        React__default['default'].createElement("image", { width: "200", height: "200", href: '/darklogo.png' })));
 };
 
 var Icon$_ = function (props) {
@@ -809,8 +809,9 @@ var Icon$Y = function (props) {
 };
 
 var Icon$X = function (props) {
+    styled.useTheme();
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: "90", height: "90", href: '/logo.png' })));
+        React__default['default'].createElement("image", { width: "90", height: "90", href: '/darklogo.png' })));
 };
 
 var Icon$W = function (props) {
@@ -1186,7 +1187,7 @@ ExpandableButton.defaultProps = {
 };
 var ExpandableLabel = function (_a) {
     var onClick = _a.onClick, expanded = _a.expanded, children = _a.children;
-    return (React__default['default'].createElement(Button, { variant: "text", "aria-label": "Hide or show expandable content", onClick: onClick, endIcon: expanded ? React__default['default'].createElement(Icon$1t, { color: "primary" }) : React__default['default'].createElement(Icon$1w, { color: "primary" }) }, children));
+    return (React__default['default'].createElement(Button, { variant: "text", "aria-label": "Hide or show expandable content", onClick: onClick, endIcon: expanded ? React__default['default'].createElement(Icon$1t, { color: "success" }) : React__default['default'].createElement(Icon$1w, { color: "success" }) }, children));
 };
 ExpandableLabel.defaultProps = {
     expanded: false,
@@ -1936,7 +1937,7 @@ var Link = function (_a) {
     return React__default['default'].createElement(StyledLink$1, __assign({ as: "a", bold: true }, internalProps, props));
 };
 Link.defaultProps = {
-    color: "primary",
+    color: "success",
 };
 var templateObject_1$E;
 
@@ -1944,7 +1945,7 @@ var LinkExternal = function (_a) {
     var children = _a.children, props = __rest(_a, ["children"]);
     return (React__default['default'].createElement(Link, __assign({ external: true }, props),
         children,
-        React__default['default'].createElement(Icon$_, { color: props.color ? props.color : "primary", ml: "4px" })));
+        React__default['default'].createElement(Icon$_, { color: props.color ? props.color : "success", ml: "4px" })));
 };
 
 var variants$3 = {
@@ -3634,7 +3635,7 @@ var ModalBody = styled__default['default'](Flex)(templateObject_3$4 || (template
 var ModalCloseButton = function (_a) {
     var onDismiss = _a.onDismiss;
     return (React__default['default'].createElement(IconButton, { variant: "text", onClick: onDismiss, "aria-label": "Close the dialog" },
-        React__default['default'].createElement(Icon$1s, { color: "primary" })));
+        React__default['default'].createElement(Icon$1s, { color: "button" })));
 };
 var ModalBackButton = function (_a) {
     var onBack = _a.onBack;
@@ -3800,7 +3801,7 @@ var Logo$2 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     // const textColor = isDark ? "#FFFFFF" : "#000000";
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 160 55" }, props),
-        React__default['default'].createElement("image", { width: "160", height: "55", href: '/images/logo.png' })));
+        React__default['default'].createElement("image", { width: "160", height: "55", href: '/images/darklogo.png' })));
 };
 var LogoWithText = React__default['default'].memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
 

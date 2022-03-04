@@ -26,7 +26,7 @@ export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded, children }
       variant="text"
       aria-label="Hide or show expandable content"
       onClick={onClick}
-      endIcon={expanded ? <ChevronUpIcon color="primary" /> : <ChevronDownIcon color="primary" />}
+      endIcon={expanded ? <ChevronUpIcon color="success" /> : <ChevronDownIcon color="success" />}
     >
       {children}
     </Button>

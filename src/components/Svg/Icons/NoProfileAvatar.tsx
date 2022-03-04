@@ -10,7 +10,7 @@ const Icon: React.FC<SvgProps> = (props) => {
 
   return (
     <Svg viewBox="0 0 200 200" {...props}>
-        <image width="200" height="200" href={'/logo.png'}/>
+        <image width="200" height="200" href={'/darklogo.png'}/>
     </Svg>
   );
 };
